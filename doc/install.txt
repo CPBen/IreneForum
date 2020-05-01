@@ -1,0 +1,12 @@
+Install
+
+cp -r Irene modules to /var/www/usr/local/libdata/perl5/site_perl/
+mkdir perl/ireneforum
+cp Iscripts/* to perl/ireneforum
+chmod 0755 perl/ireneforum/*.pl
+mkdir IreneData
+cp -r data/* IreneData/
+rename Irene::ConfigGlobalDefault.pm to ConfigGlobal.pm and ignore it for now
+rename Irene::ConfigDefault.pm to Irene::Config.pm and edit it.
+run install.pl and then chmod 0000 it and upgrade.pl
+register a user, admin is the password. Change it, etc.
